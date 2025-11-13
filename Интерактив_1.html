@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1800px;
+            margin: 30px auto;
+            font-size: 22px;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .text-content {
+            text-align: center;
+            flex: 1;
+            max-width: 800px;
+        }
+        
+        .iframe-container {
+            flex-shrink: 0;
+        }
+        
+        @media (max-width: 1600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <p>Вы можете крутить, увеличивать и уменьшать чертёж слева, как вам удобно, а также двигать точки B и С по поверхности гиперболоида.</p>
+        </div>
+        
+        <div class="iframe-container">
+            <iframe 
+                scrolling="no" 
+                title="Интерактивная_модель_1" 
+                src="https://www.geogebra.org/material/iframe/id/k3dmm2ux/width/1523/height/792/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" 
+                width="1523px" 
+                height="792px" 
+                style="border:0px;">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
